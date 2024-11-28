@@ -1,31 +1,28 @@
 using UnityEngine;
 
-public class HPSystem : MonoBehaviour
+public class HPSystem : MonoBehaviour 
 {
-    private float HP;
-
+    public float HP;
+  
     public float hp
     {
         get { return HP; }
         set { HP = value; }
     }
 
-    void Start()
+    public void Subscribe()
     {
         TestButton.HitTest += Damage;  // Subscribes to the event
-        HP = 24;  // Initial HP
+        //HP = 24;  // Initial HP
     }
 
-    void Update()
+    public void Die()
     {
-        if (HP <= 0)
-        {
             Destroy(gameObject);  // Destroys the object when HP reaches 0
             HP = 0;
-        }
     }
 
-    private void Damage()
+    public void Damage()
     {
         HP -= 7;
     }
