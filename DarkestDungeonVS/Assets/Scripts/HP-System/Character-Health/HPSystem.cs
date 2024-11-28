@@ -13,7 +13,6 @@ public class HPSystem : MonoBehaviour
     public void Subscribe()
     {
         TestButton.HitTest += Damage;  // Subscribes to the event
-        //HP = 24;  // Initial HP
     }
 
     public void Die()

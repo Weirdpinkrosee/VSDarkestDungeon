@@ -7,7 +7,7 @@ public class TestHPText : MonoBehaviour
     public TMP_Text textField;  // References to the TMP_Text component
 
 
-    public void HealthCheck()
+    public void HealthCheck() // Makes sure the HP won't go below 0
     {
         if (health.hp <= 0)
         {
