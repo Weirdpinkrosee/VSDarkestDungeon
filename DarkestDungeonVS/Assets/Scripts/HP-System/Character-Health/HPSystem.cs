@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HPSystem : MonoBehaviour 
 {
-    public float HP;
+    private float HP;
   
     public float hp
     {
@@ -22,7 +22,7 @@ public class HPSystem : MonoBehaviour
     }
 
     public void Damage()
-    {
+    { 
         HP -= 7;
     }
 }

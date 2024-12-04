@@ -7,15 +7,15 @@ public class HighwayManHealth : HPSystem
     void Start()
     {
         Subscribe();
-        HP = 23;
+        hp = 23;
     }
 
     void Update()
     {
-        if (HP <= 0)
+        if (hp <= 0)
         {
             Die();
         }
-        Debug.Log(HP);
+        Debug.Log(hp);
     }
 }

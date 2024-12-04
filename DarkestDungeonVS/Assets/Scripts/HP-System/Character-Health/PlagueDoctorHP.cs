@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CrusaderHealth : HPSystem
+public class PlagueDoctorHP : HPSystem
 {
     void Start()
     {
         Subscribe();
-        hp = 33;
+        hp = 22;
     }
 
     void Update()
@@ -17,5 +17,5 @@ public class CrusaderHealth : HPSystem
             Die();
         }
         Debug.Log(hp);
-    }    
+    }
 }

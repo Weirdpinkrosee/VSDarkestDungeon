@@ -7,15 +7,15 @@ public class VestalHealth : HPSystem
     void Start()
     {
         Subscribe();
-        HP = 24;
+        hp = 24;
     }
 
     void Update()
     {
-        if (HP <= 0)
+        if (hp <= 0)
         {
             Die();
         }
-        Debug.Log(HP);
+        Debug.Log(hp);
     }
 }

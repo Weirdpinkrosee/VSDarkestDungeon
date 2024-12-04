@@ -3,8 +3,20 @@ using UnityEngine;
 
 public class TestHPText : MonoBehaviour
 {
-    public HPSystem health;  // References to the HPSystem component
-    public TMP_Text textField;  // References to the TMP_Text component
+    private HPSystem Health;  // References to the HPSystem component
+    private TMP_Text TextField;  // References to the TMP_Text component
+
+    public HPSystem health
+    {
+        get { return Health; }
+        set { Health = value; }
+    }
+
+    public TMP_Text textField
+    {
+        get { return TextField; }
+        set { TextField = value; }
+    }
 
 
     public void HealthCheck() // Makes sure the HP won't go below 0
